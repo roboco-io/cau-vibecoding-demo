@@ -4,6 +4,8 @@
 
 [![저장소로 이동하는 QR 코드](demo/repository-qr.png)](https://github.com/roboco-io/cau-vibecoding-demo)
 
+**[DiamondDB 공개 UI 목업](https://roboco.io/cau-vibecoding-demo/)** · [프로젝트 설계·ADR·AWS 서버리스 비용](projects/diamonddb/README.md) · [가상 목표 프로필](portfolio/profile.md)
+
 학생이 에이전트와 함께 자료를 탐색하고, 포트폴리오를 만들고, 지원에 도움이 되는 프로젝트를 구현하고, 결과를 다시 포트폴리오에 반영하는 라이브 시연용 시작 저장소입니다.
 
 ## 시작하기
@@ -20,7 +22,11 @@ Node.js 22 이상과 Python 3를 사용합니다. 포트폴리오를 생성한 �
 python3 -m http.server 18766 --bind 127.0.0.1 --directory portfolio
 ```
 
-브라우저 주소는 `http://127.0.0.1:18766/`입니다. 현재는 시연 중에 만들어 갈 시작 상태이므로 포트폴리오 앱은 아직 없습니다.
+브라우저 주소는 `http://127.0.0.1:18766/`입니다. 현재 포트폴리오는 가상 목표 프로필 문서이며, DiamondDB는 설계와 가상 데이터 기반 UI 목업 단계입니다.
+
+## DiamondDB 목업 배포
+
+GitHub Pages는 `projects/diamonddb/mockup/`의 정적 화면을 공개합니다. `main`의 목업 파일 또는 Pages 워크플로우가 바뀌면 GitHub Actions가 검사 후 배포합니다. [공개 목업](https://roboco.io/cau-vibecoding-demo/)에서 PC·모바일 화면과 필터·오류 상세를 확인할 수 있습니다. 실제 AWS 리소스·DB·API는 아직 배포하지 않았습니다.
 
 ## 시연 자료
 
