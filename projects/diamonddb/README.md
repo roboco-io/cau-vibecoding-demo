@@ -10,6 +10,8 @@
 
 ## 문서
 
+- [실제 대화로 배우는 바이브 코딩 튜토리얼](../../docs/vibe-coding-tutorial/README.md): 7개 장, 실제 작업 시간·총 세션 비용 미확인. 설계 비용과 실제 배포 결과를 구분합니다.
+
 - [Overview: 문제·사용자·범위·완료 기준](docs/overview.md)
 - [아키텍처와 데이터 흐름](docs/architecture.md)
 - [데이터 계약과 오류 처리](docs/data-contract.md)
