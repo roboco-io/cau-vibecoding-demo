@@ -2,6 +2,8 @@
 
 저장소: https://github.com/roboco-io/cau-vibecoding-demo
 
+[![저장소로 이동하는 QR 코드](demo/repository-qr.png)](https://github.com/roboco-io/cau-vibecoding-demo)
+
 학생이 에이전트와 함께 자료를 탐색하고, 포트폴리오를 만들고, 지원에 도움이 되는 프로젝트를 구현하고, 결과를 다시 포트폴리오에 반영하는 라이브 시연용 시작 저장소입니다.
 
 ## 시작하기
