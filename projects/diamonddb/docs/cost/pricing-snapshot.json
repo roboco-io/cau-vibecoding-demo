@@ -1,0 +1,196 @@
+{
+  "checked_at": "2026-10-06",
+  "region": "ap-northeast-2",
+  "status": "planning assumptions, not measured production usage",
+  "rates": {
+    "lambda_request": {
+      "usd": "0.0000002000",
+      "unit": "Requests",
+      "sku": "4KD96CKPZF9FJUJ9",
+      "usage_type": "APN2-Request-ARM",
+      "description": "AWS Lambda - Total Requests for ARM - Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/20261001184746/ap-northeast-2/index.json",
+      "published_at": "2026-10-01T18:47:46Z"
+    },
+    "lambda_gb_second": {
+      "usd": "0.0000133334",
+      "unit": "Lambda-GB-Second",
+      "sku": "Y9MYZCDTMAKCDR6D",
+      "usage_type": "APN2-Lambda-GB-Second-ARM",
+      "description": "AWS Lambda - Total Compute for ARM - Asia Pacific (Seoul)-Tier-1",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/20261001184746/ap-northeast-2/index.json",
+      "published_at": "2026-10-01T18:47:46Z"
+    },
+    "http_api_request": {
+      "usd": "0.0000012300",
+      "unit": "Requests",
+      "sku": "39KUCJQBWR4UQ68S",
+      "usage_type": "APN2-ApiGatewayHttpRequest",
+      "description": "$1.23/million requests - API Gateway HTTP API (first 300 million)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonApiGateway/20261002231501/ap-northeast-2/index.json",
+      "published_at": "2026-10-02T23:15:01Z"
+    },
+    "dsql_dpu": {
+      "usd": "0.0000100000",
+      "unit": "DPU",
+      "sku": "54NBQZ6RJ4ZCZG9J",
+      "usage_type": "APN2-DSQL-DistributedProcessingUnits",
+      "description": "$0.00001 per DPU in Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AuroraDSQL/20260911124522/ap-northeast-2/index.json",
+      "published_at": "2026-09-11T12:45:22Z"
+    },
+    "dsql_storage_gb_month": {
+      "usd": "0.4000000000",
+      "unit": "GB-Month",
+      "sku": "WKBK5ATF9AHZJA5Q",
+      "usage_type": "APN2-DSQL-Storage-ByteHrs",
+      "description": "$0.40 per GB-Month in Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AuroraDSQL/20260911124522/ap-northeast-2/index.json",
+      "published_at": "2026-09-11T12:45:22Z"
+    },
+    "s3_storage_gb_month": {
+      "usd": "0.0250000000",
+      "unit": "GB-Mo",
+      "sku": "3JSN7K7UDDNCYCDM",
+      "usage_type": "APN2-TimedStorage-ByteHrs",
+      "description": "$0.025 per GB - first 50 TB / month of storage used",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260928230416/ap-northeast-2/index.json",
+      "published_at": "2026-09-28T23:04:16Z"
+    },
+    "s3_put": {
+      "usd": "0.0000045000",
+      "unit": "Requests",
+      "sku": "D3S5DN86CFPGUM5G",
+      "usage_type": "APN2-Requests-Tier1",
+      "description": "$0.0045 per 1,000 PUT, COPY, POST, or LIST requests",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260928230416/ap-northeast-2/index.json",
+      "published_at": "2026-09-28T23:04:16Z"
+    },
+    "s3_get": {
+      "usd": "0.0000003500",
+      "unit": "Requests",
+      "sku": "84G6KSFBGCU9CEC9",
+      "usage_type": "APN2-Requests-Tier2",
+      "description": "$0.0035 per 10,000 GET and all other requests",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260928230416/ap-northeast-2/index.json",
+      "published_at": "2026-09-28T23:04:16Z"
+    },
+    "sqs_request": {
+      "usd": "0.0000004000",
+      "unit": "Requests",
+      "sku": "5Y72GBZYEX3K6HZD",
+      "usage_type": "APN2-Requests-Tier1",
+      "description": "$0.40 per million Amazon SQS standard requests in Tier1 in Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSQueueService/20260911124607/ap-northeast-2/index.json",
+      "published_at": "2026-09-11T12:46:07Z"
+    },
+    "logs_ingest_gb": {
+      "usd": "0.7600000000",
+      "unit": "GB",
+      "sku": "5P9Q77R2ADUJCNJ2",
+      "usage_type": "APN2-DataProcessing-Bytes",
+      "description": "$0.76 per GB custom log data ingested in Standard log class - Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/20260922021715/ap-northeast-2/index.json",
+      "published_at": "2026-09-22T02:17:15Z"
+    },
+    "logs_storage_gb_month": {
+      "usd": "0.0314000000",
+      "unit": "GB-Mo",
+      "sku": "E7V5NF3GN7MQKCB6",
+      "usage_type": "APN2-TimedStorage-ByteHrs",
+      "description": "$0.0314 per GB-mo of log storage - Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/20260922021715/ap-northeast-2/index.json",
+      "published_at": "2026-09-22T02:17:15Z"
+    },
+    "alarm_month": {
+      "usd": "0.1000000000",
+      "unit": "Alarms",
+      "sku": "PRDBYUGVEHFG9C2J",
+      "usage_type": "APN2-CW:AlarmMonitorUsage",
+      "description": "$0.10 per alarm metric month (standard resolution) - Asia Pacific (Seoul)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/20260922021715/ap-northeast-2/index.json",
+      "published_at": "2026-09-22T02:17:15Z"
+    },
+    "cloudfront_https_request": {
+      "usd": "0.0000012000",
+      "unit": "Requests",
+      "sku": "W6KHTEW6VCKTZFTR",
+      "usage_type": "AP-Requests-Tier2-HTTPS",
+      "description": "$0.012 per 10,000 HTTPS Requests",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudFront/20261003000426/index.json",
+      "published_at": "2026-10-03T00:04:26Z"
+    },
+    "cloudfront_egress_gb": {
+      "usd": "0.1200000000",
+      "unit": "GB",
+      "sku": "A86N9S7CGUKZHH8P",
+      "usage_type": "AP-DataTransfer-Out-Bytes",
+      "description": "$0.120 per GB - first 10 TB / month data transfer out",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudFront/20261003000426/index.json",
+      "published_at": "2026-10-03T00:04:26Z"
+    },
+    "cloudfront_to_origin_gb": {
+      "usd": "0.0600000000",
+      "unit": "GB",
+      "sku": "U8P37H38743VG7RS",
+      "usage_type": "AP-DataTransfer-Out-OBytes",
+      "description": "$0.060 per GB - All data transfer out to Origin (Asia)",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudFront/20261003000426/index.json",
+      "published_at": "2026-10-03T00:04:26Z"
+    },
+    "cognito_mau": {
+      "usd": "0.0055000000",
+      "unit": "CognitoUserPoolsMAU",
+      "sku": "EVZAYBBFN7P2HUZQ",
+      "usage_type": "APN2-CognitoLiteMAU",
+      "description": "Cognito Lite ap-northeast-2 tier 1 pricing",
+      "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCognito/20260925193108/ap-northeast-2/index.json",
+      "published_at": "2026-09-25T19:31:08Z"
+    }
+  },
+  "assumptions": {
+    "api_requests": 100000,
+    "static_requests": 100000,
+    "viewer_egress_gb": 20,
+    "origin_transfer_gb": 0.1,
+    "api_memory_gb": 0.5,
+    "api_seconds": 0.2,
+    "ingest_runs": 30,
+    "ingest_memory_gb": 1,
+    "ingest_seconds": 60,
+    "dpu_per_api_request": 1,
+    "other_monthly_dpu": 20000,
+    "dsql_storage_gb_month": 2,
+    "s3_storage_gb_month": 5,
+    "s3_put_requests": 1000,
+    "s3_get_requests": 10000,
+    "sqs_requests_including_idle_polls": 300000,
+    "logs_ingest_gb": 0.1,
+    "logs_storage_gb_month": 0.1,
+    "standard_alarms": 5,
+    "cognito_direct_mau": 100,
+    "budget_krw_per_usd": 1500,
+    "assumed_vat_rate": 0.1
+  },
+  "monthly_free_allowances": {
+    "lambda_requests": 1000000,
+    "lambda_gb_seconds": 400000,
+    "dsql_dpu": 100000,
+    "dsql_storage_gb_month": 1,
+    "cloudfront_requests": 10000000,
+    "cloudfront_egress_gb": 1024,
+    "sqs_requests": 1000000,
+    "logs_ingest_gb": 5,
+    "logs_storage_gb_month": 5,
+    "standard_alarms": 10,
+    "cognito_direct_mau": 10000
+  },
+  "free_sources": [
+    "https://aws.amazon.com/rds/aurora/dsql/pricing/",
+    "https://aws.amazon.com/lambda/pricing/",
+    "https://aws.amazon.com/cloudfront/pricing/pay-as-you-go/",
+    "https://aws.amazon.com/sqs/pricing/",
+    "https://aws.amazon.com/cloudwatch/pricing/",
+    "https://aws.amazon.com/cognito/pricing/"
+  ]
+}

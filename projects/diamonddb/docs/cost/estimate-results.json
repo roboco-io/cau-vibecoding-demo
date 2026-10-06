@@ -1,0 +1,134 @@
+{
+  "0.1": {
+    "gross": {
+      "free_allowances_applied": false,
+      "api_requests": 100000,
+      "dpu_per_api_request": "0.1",
+      "total_dpu": "30000.0",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0.177340120000",
+        "Aurora DSQL DPU": "0.30000000000",
+        "Aurora DSQL storage": "0.8000000000",
+        "CloudFront": "2.64600000000",
+        "S3": "0.1330000000",
+        "SQS": "0.1200000000",
+        "CloudWatch": "0.57914000000",
+        "Cognito Lite": "0.5500000000"
+      },
+      "monthly_usd_total": "5.428480120000",
+      "monthly_krw_budget_net": "8142.720180000000",
+      "monthly_krw_budget_with_assumed_vat": "8956.9921980000000"
+    },
+    "free": {
+      "free_allowances_applied": true,
+      "api_requests": 100000,
+      "dpu_per_api_request": "0.1",
+      "total_dpu": "30000.0",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0E-10",
+        "Aurora DSQL DPU": "0E-10",
+        "Aurora DSQL storage": "0.4000000000",
+        "CloudFront": "0.00600000000",
+        "S3": "0.1330000000",
+        "SQS": "0E-10",
+        "CloudWatch": "0E-10",
+        "Cognito Lite": "0E-10"
+      },
+      "monthly_usd_total": "0.66200000000",
+      "monthly_krw_budget_net": "993.00000000000",
+      "monthly_krw_budget_with_assumed_vat": "1092.300000000000"
+    }
+  },
+  "1": {
+    "gross": {
+      "free_allowances_applied": false,
+      "api_requests": 100000,
+      "dpu_per_api_request": "1",
+      "total_dpu": "120000",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0.177340120000",
+        "Aurora DSQL DPU": "1.2000000000",
+        "Aurora DSQL storage": "0.8000000000",
+        "CloudFront": "2.64600000000",
+        "S3": "0.1330000000",
+        "SQS": "0.1200000000",
+        "CloudWatch": "0.57914000000",
+        "Cognito Lite": "0.5500000000"
+      },
+      "monthly_usd_total": "6.328480120000",
+      "monthly_krw_budget_net": "9492.720180000000",
+      "monthly_krw_budget_with_assumed_vat": "10441.9921980000000"
+    },
+    "free": {
+      "free_allowances_applied": true,
+      "api_requests": 100000,
+      "dpu_per_api_request": "1",
+      "total_dpu": "120000",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0E-10",
+        "Aurora DSQL DPU": "0.2000000000",
+        "Aurora DSQL storage": "0.4000000000",
+        "CloudFront": "0.00600000000",
+        "S3": "0.1330000000",
+        "SQS": "0E-10",
+        "CloudWatch": "0E-10",
+        "Cognito Lite": "0E-10"
+      },
+      "monthly_usd_total": "0.86200000000",
+      "monthly_krw_budget_net": "1293.00000000000",
+      "monthly_krw_budget_with_assumed_vat": "1422.300000000000"
+    }
+  },
+  "10": {
+    "gross": {
+      "free_allowances_applied": false,
+      "api_requests": 100000,
+      "dpu_per_api_request": "10",
+      "total_dpu": "1020000",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0.177340120000",
+        "Aurora DSQL DPU": "10.2000000000",
+        "Aurora DSQL storage": "0.8000000000",
+        "CloudFront": "2.64600000000",
+        "S3": "0.1330000000",
+        "SQS": "0.1200000000",
+        "CloudWatch": "0.57914000000",
+        "Cognito Lite": "0.5500000000"
+      },
+      "monthly_usd_total": "15.328480120000",
+      "monthly_krw_budget_net": "22992.720180000000",
+      "monthly_krw_budget_with_assumed_vat": "25291.9921980000000"
+    },
+    "free": {
+      "free_allowances_applied": true,
+      "api_requests": 100000,
+      "dpu_per_api_request": "10",
+      "total_dpu": "1020000",
+      "lambda_gb_seconds": "11800.00",
+      "monthly_usd_by_service": {
+        "API Gateway HTTP API": "0.1230000000",
+        "Lambda": "0E-10",
+        "Aurora DSQL DPU": "9.2000000000",
+        "Aurora DSQL storage": "0.4000000000",
+        "CloudFront": "0.00600000000",
+        "S3": "0.1330000000",
+        "SQS": "0E-10",
+        "CloudWatch": "0E-10",
+        "Cognito Lite": "0E-10"
+      },
+      "monthly_usd_total": "9.86200000000",
+      "monthly_krw_budget_net": "14793.00000000000",
+      "monthly_krw_budget_with_assumed_vat": "16272.300000000000"
+    }
+  }
+}

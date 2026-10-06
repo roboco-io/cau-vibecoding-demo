@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="aws-dsql" name="AWS 서버리스와 Aurora DSQL">
+    <mxGraphModel grid="1" page="1" pageWidth="1440" pageHeight="830">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u" value="PC / 모바일 사용자" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#edf2f5;strokeColor=#647687;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="190" width="170" height="80" />
+        </mxCell>
+        <mxCell id="cf" value="CloudFront&#10;글로벌 HTTPS" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="250" y="190" width="78" height="78" />
+        </mxCell>
+        <mxCell id="web" value="S3 정적 UI&#10;비공개 · OAC" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="250" y="70" width="78" height="78" />
+        </mxCell>
+        <mxCell id="api" value="HTTP API Gateway&#10;JWT 검증" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="190" width="78" height="78" />
+        </mxCell>
+        <mxCell id="read" value="조회 Lambda&#10;SQL JOIN · IAM" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="190" width="78" height="78" />
+        </mxCell>
+        <mxCell id="db" value="Aurora DSQL&#10;서울 · 단일 리전" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.aurora;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="940" y="280" width="78" height="78" />
+        </mxCell>
+        <mxCell id="auth" value="Cognito Lite&#10;직접 로그인" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cognito;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="70" width="78" height="78" />
+        </mxCell>
+        <mxCell id="operator" value="DB 담당자&#10;공개 입력 확보" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#edf2f5;strokeColor=#647687;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="480" width="170" height="80" />
+        </mxCell>
+        <mxCell id="raw" value="S3 원본 · manifest&#10;버전과 해시" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="250" y="480" width="78" height="78" />
+        </mxCell>
+        <mxCell id="queue" value="SQS Standard&#10;중복 전달 전제" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sqs;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="480" width="78" height="78" />
+        </mxCell>
+        <mxCell id="worker" value="적재 Lambda&#10;검사 · 트랜잭션" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="480" width="78" height="78" />
+        </mxCell>
+        <mxCell id="report" value="S3 품질 보고서&#10;재생성 가능" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="940" y="530" width="78" height="78" />
+        </mxCell>
+        <mxCell id="dlq" value="실패 DLQ" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sqs;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="690" width="78" height="78" />
+        </mxCell>
+        <mxCell id="cw" value="CloudWatch&#10;로그 · DPU · 알람" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=0;fontSize=14;fillColor=#37567b;strokeColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1180" y="490" width="78" height="78" />
+        </mxCell>
+        <mxCell id="e0" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="u" target="cf" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="정적 화면" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="cf" target="web" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="/api/*" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="cf" target="api" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="JWT" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="auth" target="api" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="조회" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="api" target="read" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="SQL" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="read" target="db" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="원본 뒤 manifest" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="operator" target="raw" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="manifest 이벤트" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="raw" target="queue" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" value="객체 버전 참조" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="queue" target="worker" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="실패" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="queue" target="dlq" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e10" value="SQL 적재" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="worker" target="db" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e11" value="JSON" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="worker" target="report" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e12" value="품질 보고서" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="read" target="report" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e13" value="로그" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="read" target="cw" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e14" value="로그" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="worker" target="cw" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e15" value="DPU" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=0;fontSize=11;" edge="1" source="db" target="cw" parent="1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="title" value="DiamondDB · AWS 서울 리전 (CloudFront는 글로벌) · 설계 / 배포 전" style="text;html=0;fontSize=22;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="10" width="1360" height="40" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

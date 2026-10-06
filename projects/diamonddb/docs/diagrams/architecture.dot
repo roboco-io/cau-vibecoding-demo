@@ -1,0 +1,35 @@
+digraph DiamondDB {
+graph [rankdir=LR, bgcolor="white", pad="0.4", nodesep="0.5", ranksep="0.7", label="DiamondDB · AWS 서버리스 + Aurora DSQL · 설계 / 배포 전", labelloc=t, fontname="Apple SD Gothic Neo", fontsize=22];
+node [shape=box, style="rounded,filled", fontname="Apple SD Gothic Neo", fontsize=16, margin="0.17,0.14", color="#647687"];
+edge [fontname="Apple SD Gothic Neo", fontsize=11, color="#647687", arrowsize=0.7];
+u [label="PC / 모바일 사용자", fillcolor="#edf2f5"];
+cf [label="CloudFront\n글로벌 HTTPS", fillcolor="#e8d8f3"];
+web [label="S3 정적 UI\n비공개 · OAC", fillcolor="#d5e8d4"];
+api [label="HTTP API Gateway\nJWT 검증", fillcolor="#e8d8f3"];
+read [label="조회 Lambda\nSQL JOIN · IAM", fillcolor="#ffdfbd"];
+db [label="Aurora DSQL\n서울 · 단일 리전", fillcolor="#dbe2ff"];
+auth [label="Cognito Lite\n직접 로그인", fillcolor="#f8d5db"];
+operator [label="DB 담당자\n공개 입력 확보", fillcolor="#edf2f5"];
+raw [label="S3 원본 · manifest\n버전과 해시", fillcolor="#d5e8d4"];
+queue [label="SQS Standard\n중복 전달 전제", fillcolor="#f8d4e8"];
+worker [label="적재 Lambda\n검사 · 트랜잭션", fillcolor="#ffdfbd"];
+report [label="S3 품질 보고서\n재생성 가능", fillcolor="#d5e8d4"];
+dlq [label="실패 DLQ", fillcolor="#f8cecc"];
+cw [label="CloudWatch\n로그 · DPU · 알람", fillcolor="#f8d4e8"];
+u -> cf [label="HTTPS"];
+cf -> web [label="정적 화면"];
+cf -> api [label="/api/*"];
+auth -> api [label="JWT",style=dashed];
+api -> read [label="조회"];
+read -> db [label="SQL"];
+operator -> raw [label="원본 뒤 manifest"];
+raw -> queue [label="manifest 이벤트"];
+queue -> worker [label="객체 버전 참조"];
+queue -> dlq [label="실패"];
+worker -> db [label="SQL 적재"];
+worker -> report [label="JSON"];
+read -> report [label="품질 보고서"];
+read -> cw [label="로그",style=dashed];
+worker -> cw [label="로그",style=dashed];
+db -> cw [label="DPU",style=dashed];
+}
